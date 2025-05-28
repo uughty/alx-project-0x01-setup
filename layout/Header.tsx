@@ -1,11 +1,12 @@
-const Header = () => {
+import React from 'react';
+import Link from 'next/link';
+
+const Header: React.FC = () => {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <nav className="flex space-x-4">
-        <a href="/">Home</a>
-        <a href="/posts">Posts</a>
-        <a href="/users">Users</a>
-      </nav>
+    <header className="bg-gray-800 text-white p-4 flex space-x-4">
+      <Link href="/">Home</Link>
+      <Link href="/posts">Posts</Link>
+      <Link href="/users">Users</Link>
     </header>
   );
 };

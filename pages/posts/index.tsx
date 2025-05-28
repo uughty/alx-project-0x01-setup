@@ -1,9 +1,7 @@
-const Posts = () => {
-  return (
-    <div className="p-8">
-      <h1 className="text-4xl mb-4">Posts Page</h1>
-    </div>
-  );
+import React from 'react';
+
+const PostsPage: React.FC = () => {
+  return <div className="p-4">This is the Posts page.</div>;
 };
 
-export default Posts;
+export default PostsPage;
